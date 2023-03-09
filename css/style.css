@@ -10,13 +10,14 @@
 }
 
 body {
+    /* font-family: "Arial"; */
     font-family: "Trebuchet MS";
     font-style: italic;
     color: #eceae4;
 }
 
 h2 {
-    font-size: clamp(20px, 5vw, 1.3em);
+    font-size: calc(16px + 0.390625vw);
 }
 
 #mainContainer {
@@ -48,7 +49,7 @@ h2 {
     text-align: center;
     background-color: #d29625;
     border: 2px solid whitesmoke;
-    box-shadow: 0 0 20px 25px rgba(110, 102, 90, 0.78), 0 0 55px 50px rgba(143, 129, 110, 0.69);
+    box-shadow: 0 0 20px 25px #544e44c9, 0 0 55px 50px rgb(143 129 110 / 69%);
 }
 
 #front {
@@ -63,7 +64,9 @@ h2 {
 
     font-family: 'Edwardian', cursive, sans-serif;
     font-size: clamp(50px, 11vw, 95px);
-    color: rgb(121, 111, 97);
+    color: #544e44;
+
+    /* font-size: calc(80px + 0.390625vw); */
 }
 
 ul {
@@ -86,10 +89,10 @@ ul {
     background-color: #d29625;
     background-image: url('../assets/Scandi-08.webp');
     background-size: contain;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0 0 10px 20px #d29625; */
 }
 
 #btn-recto,
@@ -111,12 +114,6 @@ ul {
     cursor: pointer;
 }
 
-/* .pattern {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-} */
 
 
 
