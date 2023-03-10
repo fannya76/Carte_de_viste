@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+:root {
+    --bg-color: #f5f5f5;
+    --color-2: #d29625;
+  }
+
 @font-face {
     font-family: "Edwardian";
     src: url("../assets/Edwardian Script ITC.ttf") format("truetype");
@@ -12,7 +17,7 @@
 body {
     font-family: "Trebuchet MS";
     font-style: italic;
-    color: #eceae4;
+    color: var(--bg-color);
 }
 
 h2 {
@@ -23,7 +28,7 @@ h2 {
 #mainContainer {
     position: relative;
     height: 100vh;
-    background-color: #e9e3dc;
+    background-color: var(--bg-color);
 }
 
 #card {
@@ -46,10 +51,10 @@ h2 {
     min-width: 300px;
     width: 57vw;
     height : 75vh;
-    padding: 0 5px;
+    padding: 0 14px;
 
     text-align: center;
-    background-color: #d29625;
+    background-color: var(--color-2);
     border: 2px solid whitesmoke;
 }
 
@@ -71,9 +76,9 @@ h2 {
     margin-bottom: 25px;
 
     font-family: 'Edwardian', cursive, sans-serif;
-    font-size: clamp(50px, 11vw, 90px);
+    font-size: clamp(50px, 9.3vw, 90px);
     color: #544e44;
-    text-shadow: 2px 2px 7px #ffffffd4;
+    text-shadow: 2px 2px 7px var(--bg-color);
 
     /* font-size: calc(80px + 0.390625vw); */
 }
@@ -92,8 +97,23 @@ ul {
     text-align: center;
 }
 
+#back a {
+    color: var(--bg-color);
+    z-index: 10;
+}
+
+.picto {
+    display: flex;
+    gap: 10px;
+}
+
+svg {
+    width : 32px;
+    height: auto;
+}
+
 #front, #back {
-    background-color: #d29625;
+    background-color: var(--color-2);
     background-image: url('../assets/Scandi-08.webp');
     background-size: contain;
 
