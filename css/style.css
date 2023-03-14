@@ -131,7 +131,10 @@ svg {
     width : 32px;
     height: auto;
     filter : drop-shadow(2px 2px 2px rgb(75, 70, 63));
+}
 
+svg:hover {
+    color: black;
 }
 
 #front, #back {
