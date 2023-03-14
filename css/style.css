@@ -20,6 +20,10 @@ body {
     color: var(--bg-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 h2 {
     font-size: calc(16px + 0.390625vw);
     text-shadow: 2px 2px 2px rgb(75, 70, 63);
