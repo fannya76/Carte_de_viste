@@ -46,7 +46,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5vw;
+    /* gap: 2.5vw; */
 
     min-width: 300px;
     width: 57vw;
@@ -56,6 +56,10 @@ h2 {
     text-align: center;
     background-color: var(--color-2);
     border: 2px solid whitesmoke;
+}
+
+ul, .picto {
+    margin: 5vw 0 4vw 0;
 }
 
 .flex img {
@@ -73,12 +77,13 @@ h2 {
 }
 
 #name {
-    margin-bottom: 25px;
+    /* margin-bottom: 20px; */
 
     font-family: 'Edwardian', cursive, sans-serif;
     font-size: clamp(50px, 9.3vw, 90px);
     color: #544e44;
-    text-shadow: 2px 2px 7px var(--bg-color);
+    text-shadow: 0 0 7px var(--bg-color);
+    /* text-shadow: 2px 2px 7px var(--bg-color); */
 
     /* font-size: calc(80px + 0.390625vw); */
 }
@@ -126,7 +131,7 @@ svg {
 #btn-verso
  {
     width: 160px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     padding: 5px 2px;
 
     background: rgb(121, 111, 97);
@@ -143,7 +148,10 @@ svg {
     z-index: 10;
 }
 
-
+#btn-verso
+ {
+    z-index: 9;
+ }
 
 
 
