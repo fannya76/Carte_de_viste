@@ -18,5 +18,5 @@ let mail = document.getElementById('mail')
 mail.addEventListener('click', function() {
       let mailText = mail.innerText;
       navigator.clipboard.writeText(mailText);
-      alert("Adresse Copiée : " + mailText);   
+      alert("Adresse copiée dans le Presse-papier : " + mailText);   
   });
