@@ -177,6 +177,13 @@ svg {
  transition: 0.5s ease-in-out;
  }
 
+@media screen and (width < 767px) {
+    #btn-recto,
+    #btn-verso {
+        margin-top: 30px;
+    }
+}; 
+
 
     
 
