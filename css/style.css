@@ -29,6 +29,11 @@ h2 {
     text-shadow: 2px 2px 2px rgb(75, 70, 63);
 }
 
+h2 p {
+    position: relative;
+    z-index: 9;
+}
+
 #mainContainer {
     position: relative;
     height: 100vh;
@@ -102,6 +107,7 @@ ul {
 
 #back a {
     color: var(--bg-color);
+    cursor: pointer;
     z-index: 10;
 }
 
