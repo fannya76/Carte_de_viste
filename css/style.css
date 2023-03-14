@@ -152,8 +152,11 @@ svg {
     z-index: 9;
  }
 
-
-
+#btn-recto:hover,
+#btn-verso:hover
+ {
+ transform: scale(1.1); 
+ }
 
 
     
