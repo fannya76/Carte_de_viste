@@ -55,7 +55,17 @@ h2 p:hover {
     transition: 1s ease-in-out;
 }
 
-.flex {
+#front, #back {
+    background-color: var(--bg-color-2);
+    background-image: url('../assets/Scandi-08.webp');
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
     position: relative;
 
     display: flex;
@@ -73,16 +83,13 @@ h2 p:hover {
     border: 2px solid whitesmoke;
 }
 
-.flex img {
+.text-container img {
+    position: absolute;
     width: 100%;
     height: 100%;
-
-    position: absolute;
 }
 
 #front {
-    position: absolute;
-    width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
@@ -90,10 +97,9 @@ h2 p:hover {
 #name {
     font-family: 'Edwardian', cursive, sans-serif;
     font-size: clamp(50px, 9.3vw, 90px);
+
     color: #544e44;
     text-shadow: 0 0 7px var(--bg-color);
-
-    /* font-size: calc(80px + 0.390625vw); */
 }
 
 ul {
@@ -105,11 +111,10 @@ ul {
 
 #back {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    inset: 0;
+
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    text-align: center;
 }
 
 #back a {
@@ -118,7 +123,20 @@ ul {
     z-index: 10;
 }
 
-.picto {
+/* .mail_copied {
+    font-size: calc(8px + 0.390625vw);
+    font-weight: 600;
+    background: #e6cdb1;
+    color:rgb(49, 47, 46);
+    padding : 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-shadow: none;
+    border: 1px solid black;
+
+} */
+
+.svg-container {
     display: flex;
     gap: 20px;
 
@@ -133,16 +151,6 @@ svg {
 
 svg:hover {
     color: black;
-}
-
-#front, #back {
-    background-color: var(--bg-color-2);
-    background-image: url('../assets/Scandi-08.webp');
-    background-size: contain;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #btn-recto,
@@ -173,8 +181,7 @@ svg:hover {
 #btn-recto:hover,
 #btn-verso:hover
  {
- background-color: #d28125;
- border: 1px solid rgb(0, 0, 0);
+ background-color: #2b2725;
  transition: 0.5s ease-in-out;
  }
 
@@ -183,7 +190,7 @@ svg:hover {
     #btn-verso {
         margin-top: 30px;
     }
-};
+}
     
 
 
