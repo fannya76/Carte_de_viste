@@ -5,8 +5,17 @@
 }
 
 :root {
-    --bg-color: #f5f5f5;
-    --bg-color-2: #d29625;
+    --bg-color-body: #f5f5f5;
+
+    --bg-color-card : #7e0114d0;
+    --bg-color-txt-ctn: #7e0114;
+
+    --color-name : #eee6d5;
+    --color-txt: #f3f0e9;
+
+    --color-anthracite : #312e2e;
+    --color-creme : #eee6d5;
+    
   }
 
 @font-face {
@@ -17,16 +26,66 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    color: var(--bg-color);
 }
 
 a {
     text-decoration: none;
 }
 
+#mainContainer {
+    position: relative;
+    height: 100vh;
+}
+
+#card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    transform-style: preserve-3d;
+    transition: 1s ease-in-out;
+    
+    background-color: var(--bg-color-card);
+}
+
+#front, #back {
+    background-image: url('../assets/Scandi-08.webp');
+    background-size: contain;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    min-width: 300px;
+    width: 57vw;
+    height : 75vh;
+    padding: 0 14px;
+    
+    text-align: center;
+    border: 2px solid var(--color-txt);
+    background-color: var(--bg-color-txt-ctn);
+    /* filter: blur(5px); */
+}
+
+.text-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 h2 {
     font-size: calc(17px + 0.390625vw);
     font-weight: normal;
+    color : var(--color-txt);
     text-shadow: 2px 2px 2px rgb(75, 70, 63);
 }
 
@@ -41,65 +100,17 @@ h2 p:hover {
     text-shadow: none;
 } 
 
-#mainContainer {
-    position: relative;
-    height: 100vh;
-    background-color: var(--bg-color);
-}
-
-#card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: 1s ease-in-out;
-}
-
-#front, #back {
-    background-color: var(--bg-color-2);
-    background-image: url('../assets/Scandi-08.webp');
-    background-size: contain;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-container {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    min-width: 300px;
-    width: 57vw;
-    height : 75vh;
-    padding: 0 14px;
-
-    text-align: center;
-    background-color: var(--bg-color-2);
-    border: 2px solid whitesmoke;
-}
-
-.text-container img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
 #front {
     height: 100%;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /*l'élément sera invisible quand retourné*/
 }
 
 #name {
     font-family: 'Edwardian', cursive, sans-serif;
     font-size: clamp(50px, 9.3vw, 90px);
 
-    color: #544e44;
-    text-shadow: 0 0 7px var(--bg-color);
+    color: var(--color-name);
+    /* text-shadow: 0 0 7px var(--color-anthracite); */
 }
 
 ul {
@@ -118,7 +129,7 @@ ul {
 }
 
 #back a {
-    color: var(--bg-color);
+    color: var(--color-txt);
     cursor: pointer;
     z-index: 10;
 }
@@ -159,13 +170,13 @@ svg:hover {
     width: 160px;
     padding: 5px 2px;
 
-    background: rgb(121, 111, 97);
-    color : white;
-
+    color: var(--color-creme);
+    background: var(--color-anthracite);
+   
     font-style: italic;
     font-size: 20px;
     
-    border: 1px solid white;
+    /* border: 1px solid var(--color-anthracite); */
     border-radius: 5px;
 
     cursor: pointer;
@@ -181,7 +192,9 @@ svg:hover {
 #btn-recto:hover,
 #btn-verso:hover
  {
- background-color: #2b2725;
+    color: var(--color-anthracite);
+    background: var(--color-creme);
+
  transition: 0.5s ease-in-out;
  }
 
@@ -191,10 +204,3 @@ svg:hover {
         margin-top: 30px;
     }
 }
-    
-
-
-    
-
-
-
