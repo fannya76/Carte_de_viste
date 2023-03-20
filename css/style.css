@@ -48,7 +48,7 @@ a {
 }
 
 #front, #back {
-    background-image: url('../assets/Scandi-08.webp');
+    /* background-image: url('../assets/Scandi-08.webp'); */
     background-size: contain;
     
     display: flex;
@@ -170,32 +170,36 @@ svg:hover {
      font-style: italic;
      font-size: 20px;
 
-    color: #EAE1B8;
+    color: var(--clr-border-txt-ctn);
     background: var(--color-anthracite);
-    box-shadow: 0px 0px 20px #EAE1B8 ;
+    box-shadow: 0px 0px 20px var(--clr-border-txt-ctn) ;
 
     border : 2px solid var(--color-anthracite);    
     border-radius: 5px;
 
     cursor: pointer;
     z-index: 10;
+
+    transition: 0.5s ease-in;
 }
 
 #btn-verso
  {
+    margin-top: 30px;
     z-index: 9;
  }
 
 #btn-recto:hover,
 #btn-verso:hover
  {
-    border : 2px solid var(--color-anthracite);
-    box-shadow: 0px 0px 20px var(--color-anthracite);
+    color: var(--color-anthracite);
+    border : 2px solid var(--clr-border-txt-ctn);
+    box-shadow: 0px 0px 20px var(--clr-border-txt-ctn);
+    background-color: var(--clr-border-txt-ctn);
  }
 
 @media screen and (width < 767px) {
-    #btn-recto,
-    #btn-verso {
+    #btn-recto {
         margin-top: 30px;
     }
 }
