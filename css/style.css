@@ -211,4 +211,7 @@ svg:hover {
     #btn-recto {
         margin-top: 30px;
     }
+    #btn-verso {
+        transform: translateY(20px); 
+    }
 }
