@@ -5,7 +5,7 @@
 }
 
 :root {
-    --bg-color-card : #7e0114d0;
+    --bg-color-card : hsla(351, 98%, 25%, 0.9);
     --bg-color-txt-ctn: #8f1c2d;
 
     --color-name : #eee6d5;
@@ -14,7 +14,7 @@
     --color-anthracite : #4d4949;
     --color-creme : #eee6d5;
 
-    --clr-border-txt-ctn : #EAE1B8; /*color cadre.png*/    
+    --clr-border-txt-ctn : #EAE1B8; /*color cadre floral*/    
   }
 
 @font-face {
@@ -48,8 +48,8 @@ a {
 }
 
 #front, #back {
-    /* background-image: url('../assets/Scandi-08.webp'); */
-    background-size: contain;
+    background-image: url('../assets/texture_tissu.png');
+    /* background-size: contain; */
     
     display: flex;
     justify-content: center;
