@@ -11,7 +11,7 @@
     --color-name : #eee6d5;
     --color-txt: #EAE1B8;
 
-    --color-anthracite : #4d4949;
+    --color-anthracite : #503f41;
     --color-creme : #eee6d5;
 
     --clr-border-txt-ctn : #EAE1B8; /*color cadre floral*/    
@@ -25,9 +25,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    
     background-color: #503f41;
-
+    color: var(--color-txt)
 }
 
 a {
@@ -52,8 +51,6 @@ a {
 
 #front, #back {
     background-image: url('../assets/texture_tissu.png');
-    /* background-size: contain; */
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +83,7 @@ a {
 h2 {
     font-size: calc(17px + 0.390625vw);
     font-weight: normal;
-    color : var(--color-txt);
+    /* color : var(--color-txt); */
     text-shadow: 2px 2px 2px rgb(75, 70, 63);
 }
 
@@ -167,25 +164,19 @@ svg:hover {
 #btn-recto,
 #btn-verso
  {
-    width: 160px;
+width: 160px;
     padding: 5px 2px;
-    
-     font-style: italic;
-     font-size: 20px;
-
-    color: var(--clr-border-txt-ctn);
-    background: var(--color-anthracite);
-    box-shadow: 0px 0px 20px var(--clr-border-txt-ctn) ;
-
-    border : 2px solid var(--color-anthracite);    
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(39 36 36);
+    background: #d68a96e6;
+    box-shadow: 0px 0px 20px var(--clr-border-txt-ctn);
+    border: 2px solid #eae1b8;
     border-radius: 5px;
-
     cursor: pointer;
     z-index: 10;
-
-    transition: 0.4s ease-in;
-}
-
+    transition: all 0.4s ease-in 0s;
+ }
 #btn-verso
  {
     margin-top: 30px;
@@ -210,6 +201,12 @@ svg:hover {
     border : 1px solid var(--clr-border-txt-ctn);
 }
 
+p.siret {
+    position: absolute;
+    bottom: 22px;
+    font-size: calc(12px + 0.2vw);
+}
+
 @media screen and (width < 767px) {
     #btn-recto {
         margin-top: 30px;
@@ -218,3 +215,10 @@ svg:hover {
         transform: translateY(20px); 
     }
 }
+    
+
+
+    
+
+
+
