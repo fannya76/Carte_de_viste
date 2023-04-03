@@ -109,6 +109,13 @@ a {
     height: 100%;
 }
 
+.text-container .photo {
+    position: static;
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 h2 {
     font-size: calc(17px + 0.390625vw);
     font-weight: normal;
@@ -188,7 +195,7 @@ ul {
     display: flex;
     gap: 20px;
 
-    margin: 35px 0 40px 0;
+    margin: 35px 0 20px 0;
 }
 
 svg {
@@ -264,4 +271,9 @@ p.siret {
                 transform: translateY(20px); 
     }
 }
+    
+
+
+    
+
 
