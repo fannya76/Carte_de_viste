@@ -115,6 +115,12 @@ h2 {
     text-shadow: 2px 2px 2px rgb(75, 70, 63);
 }
 
+.services {
+    font-size: calc(18px + 0.390625vw);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 h2 p {
     position: relative;
     cursor: pointer;
@@ -258,9 +264,4 @@ p.siret {
                 transform: translateY(20px); 
     }
 }
-    
-
-
-    
-
 
