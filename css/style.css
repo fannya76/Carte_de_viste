@@ -231,7 +231,7 @@ width: 160px;
  }
 #btn-verso
  {
-    margin-top: 30px;
+    margin-top: 10px;
 
     border: 1px solid;
     background-color: #f0e9ea21;
@@ -265,11 +265,11 @@ p.siret {
     #btn-recto {
         margin-top: 30px;
     }
-    #btn-verso {
+    /* #btn-verso {
         -webkit-transform: translateY(20px);
             -ms-transform: translateY(20px);
                 transform: translateY(20px); 
-    }
+    } */
 }
     
 
